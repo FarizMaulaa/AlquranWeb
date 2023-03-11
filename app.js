@@ -222,3 +222,9 @@ events.listen("onPrevPage", ({ prevPage }) => {
 
 // mount app
 window.onload = events.dispatch("onStart", {});
+
+function drakMode() {
+  var element = document.body;
+  element.classList.toggle("drak-mode");
+  document.getElementById("icon").innerHTML = "🌙";
+}
